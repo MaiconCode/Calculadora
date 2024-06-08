@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@500&family=Roboto&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <div id="calculadora">
+        <header>
+            <h2 class="title">Calculadora</h2>
+        </header>
+        <div id="entrada">
+            0
+        </div>
+        <table>
+            <tr>
+                <td class="tecla" onclick="limpar()">C</td>
+                <td class="tecla" onclick="pontenciar()">^</td>
+                <td class="tecla" onclick="adicionarTecla('/')">/</td>
+                <td class="tecla" onclick="adicionarTecla('*')">X</td>
+            </tr>
+            <tr>
+                <td class="tecla" onclick="adicionarTecla('7')">7</td>
+                <td class="tecla" onclick="adicionarTecla('8')">8</td>
+                <td class="tecla" onclick="adicionarTecla('9')">9</td>
+                <td class="tecla" onclick="adicionarTecla('-')">-</td>
+            </tr>
+            <tr>
+                <td class="tecla" onclick="adicionarTecla('4')">4</td>
+                <td class="tecla" onclick="adicionarTecla('5')">5</td>
+                <td class="tecla" onclick="adicionarTecla('6')">6</td>
+                <td class="tecla" onclick="adicionarTecla('+')">+</td>
+            </tr>
+            <tr>
+                <td class="tecla" onclick="adicionarTecla('1')">1</td>
+                <td class="tecla" onclick="adicionarTecla('2')">2</td>
+                <td class="tecla" onclick="adicionarTecla('3')">3</td>
+                <td class="tecla" onclick="calcular()" rowspan="2">=</td>
+            </tr>
+            <tr>
+                <td class="tecla" onclick="adicionarTecla('0')" colspan="2">0</td>
+                <td class="tecla" onclick="adicionarTecla('.')">.</td>
+            </tr>
+        </table>
+    </div>
+    
+    <script src="Javascript/scripts.js"></script>
+</body>
+</html>
